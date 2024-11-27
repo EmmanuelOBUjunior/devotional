@@ -1,4 +1,6 @@
 import React from 'react'
+import Connect from './Connect'
+import Share from './Share'
 
 const MainVideoTab = () => {
   return (
@@ -10,7 +12,8 @@ const MainVideoTab = () => {
           src="video/homevideo.mp4" 
         />
       <div className="w-full flex flex-col md:flex-row justify-center items-center gap-6 p-4">
-        share and connect here
+        <Connect/>
+        <Share/>
       </div>
       </div>
 
