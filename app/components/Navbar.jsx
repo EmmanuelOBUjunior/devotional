@@ -1,5 +1,6 @@
 import Image from "next/image";
-import React from "react";
+import { FaBook } from "react-icons/fa";
+
 
 const Navbar = ({ activeTab, setActiveTab }) => {
   return (
@@ -29,7 +30,8 @@ const Navbar = ({ activeTab, setActiveTab }) => {
                 activeTab === "devotional" ? "bg-blue-500 text-white" : "text-[#6C6C6C]"
               }`}
           >
-            <Image src="icons/file.svg" alt="Devotion" width={24} height={24}/>
+            {/* <Image src="icons/file.svg" alt="Devotion" width={24} height={24}/> */}
+            <FaBook width={24} height={24}/>
             <span className="text-sm">Devotion</span>
           </button>
         </nav>
