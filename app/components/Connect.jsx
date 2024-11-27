@@ -1,10 +1,21 @@
-import React from "react";
+import Link from "next/link";
+import {FaFacebook, FaYoutube, FaGlobe} from 'react-icons/fa'
 
 const Connect = () => {
   return (
-    <div className="flex-1 bg-gray-100 p-4 text-center rounded-md shadow-md">
-      <h2 className="text-lg font-bold">Share with Your Community</h2>
-      share icons here
+    <div className="flex flex-col gap-1">
+      <span className="font-semibold text-white">Connect with us</span>
+      <div className="flex gap-3">
+        <Link href="/">
+          <FaFacebook className="bg-white text-blue-500 rounded-md" size={30} />
+        </Link>
+        <Link href="/">
+          <FaYoutube className="bg-white text-blue-500 rounded-md" size={30} />
+        </Link>
+        <Link href="/">
+          <FaGlobe className="bg-white text-blue-500 rounded-md" size={30} />
+        </Link>
+      </div>
     </div>
   );
 };

@@ -11,7 +11,7 @@ const MainVideoTab = () => {
           controls 
           src="video/homevideo.mp4" 
         />
-      <div className="w-full flex flex-col md:flex-row justify-center items-center gap-6 p-4">
+      <div className="bg-blue-500 w-full flex flex-col md:flex-row justify-center items-center gap-6 p-2 rounded-lg mt-2">
         <Connect/>
         <Share/>
       </div>
