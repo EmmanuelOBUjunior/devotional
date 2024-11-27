@@ -12,7 +12,7 @@ const Share = ({title, url}) => {
       setTimeout(() => setCopied(false), 2000);
     };
     return (
-      <div className="flex flex-col gap-1 sm:items-center">
+      <div className="flex flex-col gap-1 items-center md:items-start">
         <span className="font-semibold text-white">Share with your community</span>
         <div className="flex gap-3">
           {/* WhatsApp */}

@@ -3,7 +3,7 @@ import {FaFacebook, FaYoutube, FaGlobe} from 'react-icons/fa'
 
 const Connect = () => {
   return (
-    <div className="flex flex-col gap-1">
+    <div className="flex flex-col items-center md:items-start">
       <span className="font-semibold text-white">Connect with us</span>
       <div className="flex gap-3">
         <Link href="/">
