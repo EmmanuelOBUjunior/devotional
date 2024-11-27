@@ -7,7 +7,7 @@ const MainVideoTab = () => {
         <video 
           className="w-full max-w-md md:max-w-3xl" 
           controls 
-          src="/video/sample.mp4" 
+          src="video/homevideo.mp4" 
         />
       </div>
 
