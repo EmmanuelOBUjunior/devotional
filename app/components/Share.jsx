@@ -50,7 +50,7 @@ const Share = ({title, url}) => {
   
           {/* Copy Link */}
           <button onClick={copyLink}>
-            {copied ? "Link Copied!" : <FaLink className="bg-white text-blue-500 rounded-md" size={30}/>}
+            {copied ? "Link Copied!" : <FaLink className="bg-white text-blue-500 rounded-md" size={24}/>}
           </button>
         </div>
       </div>
