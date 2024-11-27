@@ -1,4 +1,3 @@
-import localFont from "next/font/local";
 import {Raleway} from 'next/font/google'
 import "./globals.css";
 
