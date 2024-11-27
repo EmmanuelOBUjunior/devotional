@@ -1,5 +1,12 @@
 import localFont from "next/font/local";
+import {Raleway} from 'next/font/google'
 import "./globals.css";
+
+
+
+const raleway = Raleway({
+  subsets: ['latin']
+})
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
