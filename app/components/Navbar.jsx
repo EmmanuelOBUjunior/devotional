@@ -31,7 +31,7 @@ const Navbar = ({ activeTab, setActiveTab }) => {
               }`}
           >
             {/* <Image src="icons/file.svg" alt="Devotion" width={24} height={24}/> */}
-            <FaBook width={24} height={24}/>
+            <FaBook size={24}/>
             <span className="text-sm">Devotion</span>
           </button>
         </nav>
