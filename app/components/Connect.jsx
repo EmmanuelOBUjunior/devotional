@@ -7,13 +7,13 @@ const Connect = () => {
       <span className="font-semibold text-white">Connect with us</span>
       <div className="flex gap-3">
         <Link href="/">
-          <FaFacebook className="bg-white text-blue-500 rounded-md" size={30} />
+          <FaFacebook className="bg-white text-blue-500 rounded-md" size={24} />
         </Link>
         <Link href="/">
-          <FaYoutube className="bg-white text-blue-500 rounded-md" size={30} />
+          <FaYoutube className="bg-white text-blue-500 rounded-md" size={24} />
         </Link>
         <Link href="/">
-          <FaGlobe className="bg-white text-blue-500 rounded-md" size={30} />
+          <FaGlobe className="bg-white text-blue-500 rounded-md" size={24} />
         </Link>
       </div>
     </div>
