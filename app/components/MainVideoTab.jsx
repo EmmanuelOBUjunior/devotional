@@ -9,7 +9,7 @@ const MainVideoTab = () => {
           controls 
           src="video/homevideo.mp4" 
         />
-      <div className="w-full">
+      <div className="w-full flex flex-col md:flex-row justify-center items-center gap-6 p-4">
         share and connect here
       </div>
       </div>
