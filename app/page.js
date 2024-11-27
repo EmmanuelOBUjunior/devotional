@@ -3,14 +3,14 @@ import { useState } from 'react';
 import MainVideoTab from './components/MainVideoTab';
 import DevotionTab from './components/DevotionTab';
 export default function Home() {
-  const [activeTab, setActiveTab] = useState('devotion')
+  const [activeTab, setActiveTab] = useState('devotional')
 
   return (
     <div>
       {activeTab === 'home' &&(
         <MainVideoTab/>
       )}
-      {activeTab === 'devotion' &&(
+      {activeTab === 'devotional' &&(
         <DevotionTab/>
       )}
     </div>
