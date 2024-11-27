@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Navbar = () => {
+const Navbar = ({activeTab, setActiveTab}) => {
   return (
     <div>Navbar</div>
   )
