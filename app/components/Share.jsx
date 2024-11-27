@@ -3,7 +3,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { FaFacebook, FaLink, FaTwitter, FaWhatsapp } from "react-icons/fa";
 
-const Share = () => {
+const Share = ({title, url}) => {
     const [copied, setCopied] = useState(false);
 
     const copyLink = () => {
@@ -23,7 +23,7 @@ const Share = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaWhatsapp className="bg-white text-blue-500 rounded-md" size={30} />
+            <FaWhatsapp className="bg-white text-blue-500 rounded-md" size={24} />
           </Link>
   
           {/* Twitter */}
@@ -34,7 +34,7 @@ const Share = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaTwitter className="bg-white text-blue-500 rounded-md" size={30} />
+            <FaTwitter className="bg-white text-blue-500 rounded-md" size={24} />
           </Link>
   
           {/* Facebook */}
