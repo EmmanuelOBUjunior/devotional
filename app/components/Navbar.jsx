@@ -10,7 +10,7 @@ const Navbar = ({ activeTab, setActiveTab }) => {
         <nav className="mx-auto flex bg-white shadow-md rounded-full p-2 space-x-16 items-center border-2">
           <button
             onClick={() => setActiveTab("home")}
-            className={`flex items-center gap-2 p-2 rounded-full font-bold ${
+            className={`flex duration-200 items-center gap-2 p-2 rounded-full font-bold ${
               activeTab === "home" ? "bg-blue-500 text-white" : "text-[#6C6C6C]"
             }`}
           >
@@ -26,7 +26,7 @@ const Navbar = ({ activeTab, setActiveTab }) => {
           </button>
           <button
             onClick={() => setActiveTab("devotional")}
-            className={`flex items-center gap-2 p-2 rounded-full font-bold ${
+            className={`flex duration-200 items-center gap-2 p-2 rounded-full font-bold ${
                 activeTab === "devotional" ? "bg-blue-500 text-white" : "text-[#6C6C6C]"
               }`}
           >
