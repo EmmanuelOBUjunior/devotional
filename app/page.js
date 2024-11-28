@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div>
       {activeTab === "home" && <MainVideoTab />}
-      {activeTab === "devotional" && <DevotionTab />}
+      {activeTab === "devotional" && <DevotionTab title='Hearing the voice of God' url='https://devotional-nu.vercel.app/' />}
       <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
     </div>
   );
