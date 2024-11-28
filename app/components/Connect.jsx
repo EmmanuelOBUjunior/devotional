@@ -1,5 +1,11 @@
 import Link from "next/link";
-import {FaFacebook, FaYoutube, FaGlobe, FaFacebookF, FaFacebookSquare} from 'react-icons/fa'
+import {
+  FaFacebook,
+  FaYoutube,
+  FaGlobe,
+  FaFacebookF,
+  FaFacebookSquare,
+} from "react-icons/fa";
 
 const Connect = () => {
   return (
