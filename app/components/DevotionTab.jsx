@@ -7,7 +7,6 @@ import {
   FaWhatsapp,
   FaYoutube,
 } from "react-icons/fa";
-import Connect from "./Connect";
 import Link from "next/link";
 import { useState } from "react";
 
