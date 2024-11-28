@@ -79,7 +79,7 @@ const DevotionTab = () => {
               sunt in culpa qui officia deserunt mollit anim id est laborum
             </p>
           </div>
-          <div className="border-2 border-[#2B88EF] bg-[#F4F8FC] rounded-lg p-3 mt-3 container mx-auto">
+          <div className="border-2 border-[#2B88EF] bg-[#F4F8FC] rounded-lg p-3 my-3 container mx-auto">
             <h3 className="text-[#6C6C6C] font-bold">Scripture Reading</h3>
             <p className="text-md text-justify">
               Lord, thank you for speaking to me and desiring a relationship
@@ -89,6 +89,9 @@ const DevotionTab = () => {
               Your voice. Teach me to be still and know that You are God. In
               Jesus&apos; Name, I pray. Amen.
             </p>
+          </div>
+          <div className="bg-[#1837C2] p-2 rounded-lg mb-6">
+            <p className="">Share with your community</p>
           </div>
         </div>
         <div className="flex-1 bg-white p-6">
