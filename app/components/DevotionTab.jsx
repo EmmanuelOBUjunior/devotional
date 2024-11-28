@@ -13,7 +13,11 @@ const DevotionTab = () => {
         </div>
       </div>
       <div className="flex flex-col md:flex-row gap-6 flex-grow">
-        
+        <div className="flex flex-col bg-white p-6 shadow-md md:w-2/3 rounded-md">
+        <div>
+            <h2 className="font-extrabold uppercase">Hearing God&apos;s Voice</h2>
+        </div>
+        </div>
       </div>
     </div>
   );
