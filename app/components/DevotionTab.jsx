@@ -37,7 +37,7 @@ const devotions = [
 
 const DevotionTab = () => {
   return (
-    <div className="flex flex-col p-4 max-w-4xl mx-auto">
+    <div className="flex flex-col px-4 py-12 max-w-4xl mx-auto">
       <div className="mb-4">
         {/* <div className="w-full h-60 bg-gray-200 rounded-md"> */}
         <video
