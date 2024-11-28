@@ -48,12 +48,12 @@ const DevotionTab = () => {
         {/* </div> */}
       </div>
       <div className="flex flex-col md:flex-row gap-6 flex-grow">
-        <div className="flex flex-col bg-white p-6 shadow-md md:w-2/3 rounded-md">
+        <div className="flex flex-col bg-white p-6 md:w-3/5">
           <div className="flex items-center justify-between">
             <h2 className="text-xl md:text-2xl font-extrabold uppercase">
               Hearing God&apos;s Voice
             </h2>
-            <p className="text-[#6C6C6C]">25-Nov-2024</p>
+            <p className="text-[#6C6C6C] text-sm md:text-lg">25-Nov-2024</p>
           </div>
           <div className="border-2 border-[#EFAA2B] rounded-lg p-3 mt-3">
             <h3 className="text-[#6C6C6C] font-bold">Scripture Reading</h3>
@@ -91,8 +91,8 @@ const DevotionTab = () => {
             </p>
           </div>
         </div>
-        <div className="flex-1 bg-white p-6 shadow-md rounded-md">
-          <div className="bg-[#1837C2] p-2 rounded-lg mb-2">
+        <div className="flex-1 bg-white p-6">
+          <div className="bg-[#1837C2] p-2 rounded-lg mb-6">
             <Connect />
           </div>
           <h2 className="text-2xl font-semibold mb-4">Past Devotions</h2>
