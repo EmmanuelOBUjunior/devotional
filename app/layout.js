@@ -8,15 +8,20 @@ const raleway = Raleway({
 export const metadata = {
   title: "Hearing the Voice of God",
   description: "This is the devotion for hearing the voice of God",
-  openGraph:{
+  openGraph: {
     title: "Hearing the Voice of God",
     description: "This is the devotion for hearing the voice of God",
-    image:[
+    image: [
       {
-        url: ''
-      }
-    ]
-  }
+        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3JWm2Ai7KPqpxZLPmrrxT88LL20pfnTF6jw&s",
+      },
+    ],
+  },
+  twitter: {
+    title: "Hearing the Voice of God",
+    description: "This is the devotion for hearing the voice of God",
+    images: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3JWm2Ai7KPqpxZLPmrrxT88LL20pfnTF6jw&s'
+  },
 };
 
 export default function RootLayout({ children }) {
