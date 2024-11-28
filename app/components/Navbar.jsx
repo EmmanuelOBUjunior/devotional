@@ -27,7 +27,7 @@ const Navbar = ({ activeTab, setActiveTab }) => {
           <button
             onClick={() => setActiveTab("devotional")}
             className={`flex duration-200 items-center gap-2 p-2 rounded-full font-bold ${
-                activeTab === "devotional" ? "bg-blue-500 text-white" : "text-[#6C6C6C]"
+                activeTab === "devotional" ? "bg-[#1837C2] text-white" : "text-[#6C6C6C]"
               }`}
           >
             {/* <Image src="icons/file.svg" alt="Devotion" width={24} height={24}/> */}
