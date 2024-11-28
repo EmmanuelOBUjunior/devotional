@@ -1,9 +1,46 @@
+import Connect from "./Connect";
+
 const devotions = [
-    { date: "2024-07-01", title: "Devotion for July 1" },
-    { date: "2024-06-30", title: "Devotion for June 30" },
-    { date: "2024-06-29", title: "Devotion for June 29" },
-    { date: "2024-06-28", title: "Devotion for June 28" },
-    { date: "2024-06-27", title: "Devotion for June 27" },
+    {
+        id: 1,
+        date: '2024-05-27',
+        title: 'Finding Peace in Uncertain Times',
+        verse: 'Isaiah 41:10',
+        content: 'Fear not, for I am with you; be not dismayed, for I am your God; I will strengthen you, I will help you, I will uphold you with my righteous right hand.',
+        author: 'John Smith'
+      },
+      {
+        id: 2,
+        date: '2024-05-26',
+        title: 'The Power of Forgiveness',
+        verse: 'Ephesians 4:32',
+        content: 'Be kind and compassionate to one another, forgiving each other, just as in Christ God forgave you.',
+        author: 'Jane Doe'
+      },
+      {
+        id: 3,
+        date: '2024-05-25',
+        title: 'Walking in Love',
+        verse: '1 Corinthians 16:14',
+        content: 'Do everything in love.',
+        author: 'Mark Johnson'
+      },
+      {
+        id: 4,
+        date: '2024-05-24',
+        title: 'Trusting God\'s Plan',
+        verse: 'Proverbs 3:5-6',
+        content: 'Trust in the Lord with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight.',
+        author: 'Sarah Williams'
+      },
+      {
+        id: 5,
+        date: '2024-05-23',
+        title: 'Hope in Difficult Times',
+        verse: 'Romans 8:28',
+        content: 'And we know that in all things God works for the good of those who love him, who have been called according to his purpose.',
+        author: 'Michael Brown'
+      }
   ];
 
 const DevotionTab = () => {
@@ -44,7 +81,10 @@ const DevotionTab = () => {
             </div>
         </div>
         <div className="flex-1 bg-white p-6 shadow-md rounded-md">
-            <h2 className="text-2xl font-semibold mb-4">Last 5 Days</h2>
+            <div className="bg-blue-500 p-2 rounded-lg mb-2">
+                <Connect/>
+            </div>
+            <h2 className="text-2xl font-semibold mb-4">Past Devotions</h2>
             <ul className="space-y-4">
               {devotions.map((devotion, index) => (
                 <li key={index}>
