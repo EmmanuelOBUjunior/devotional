@@ -42,6 +42,7 @@ const devotions = [
 ];
 
 const DevotionTab = ({ title, url }) => {
+    const [copied, setCopied] = useState(false)
   const copyLink = () => {
     navigator.clipboard.writeText(url);
     setCopied(true);
