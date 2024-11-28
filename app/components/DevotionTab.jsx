@@ -12,6 +12,9 @@ const DevotionTab = () => {
           />
         </div>
       </div>
+      <div className="flex flex-col md:flex-row gap-6 flex-grow">
+
+      </div>
     </div>
   );
 };
