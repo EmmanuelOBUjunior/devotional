@@ -1,9 +1,19 @@
 import React from 'react'
 import Connect from './Connect'
 import Share from './Share'
+import Head from 'next/head'
 
 const MainVideoTab = () => {
   return (
+    <>
+    <Head>
+        <title>Your Page Title</title>
+        <meta name="description" content="Description of your page" />
+        <meta property="og:title" content="Your Page Title" />
+        <meta property="og:description" content="Description of your page" />
+        <meta property="og:url" content="https://yourwebsite.com/yourPage" />
+        <meta property="og:image" content="https://yourwebsite.com/yourImage.jpg" />
+      </Head>
         <div className="min-h-screen flex flex-col px-4 justify-between pb-16">
       <div className="flex m-auto flex-col items-center justify-center">
         <video 
@@ -16,8 +26,8 @@ const MainVideoTab = () => {
         <Share/>
       </div>
       </div>
-
     </div>
+    </>
   )
 }
 
