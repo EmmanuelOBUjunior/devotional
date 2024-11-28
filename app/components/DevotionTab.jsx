@@ -5,31 +5,31 @@ const devotions = [
     id: 1,
     date: "2024-05-27",
     title: "Finding Peace in Uncertain Times",
-   url: "/"
+    url: "/",
   },
   {
     id: 2,
     date: "2024-05-26",
     title: "The Power of Forgiveness",
-   url: "/"
+    url: "/",
   },
   {
     id: 3,
     date: "2024-05-25",
     title: "Walking in Love",
-   url: "/"
+    url: "/",
   },
   {
     id: 4,
     date: "2024-05-24",
     title: "Trusting God's Plan",
-    url: "/"
+    url: "/",
   },
   {
     id: 5,
     date: "2024-05-23",
     title: "Hope in Difficult Times",
-    url: "/"
+    url: "/",
   },
 ];
 
