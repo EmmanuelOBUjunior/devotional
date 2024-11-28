@@ -1,9 +1,9 @@
-import Head from 'next/head'
+import Head from "next/head";
 
-const MetaTags = ({title, imageURL, description, url}) => {
+const MetaTags = ({ title, imageURL, description, url }) => {
   return (
     <Head>
-        <title>{title}</title>
+      <title>{title}</title>
       <meta name="description" content={description} />
 
       {/* Open Graph (OG) for Facebook, LinkedIn, etc. */}
@@ -19,7 +19,7 @@ const MetaTags = ({title, imageURL, description, url}) => {
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
     </Head>
-  )
-}
+  );
+};
 
-export default MetaTags
+export default MetaTags;
