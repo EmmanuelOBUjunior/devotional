@@ -15,7 +15,11 @@ const DevotionTab = () => {
       <div className="flex flex-col md:flex-row gap-6 flex-grow">
         <div className="flex flex-col bg-white p-6 shadow-md md:w-2/3 rounded-md">
         <div className="flex items-center justify-between">
-            <h2 className="text-2xl font-extrabold uppercase">Hearing God&apos;s Voice</h2>
+            <h2 className="text-xl md:text-2xl font-extrabold uppercase">Hearing God&apos;s Voice</h2>
+            <p className="text-[#6C6C6C]">25-Nov-2024</p>
+        </div>
+        <div className="border-2 border-[#EFAA2B] rounded-lg p-3 mt-3">
+<h3>Scripture Reading</h3>
         </div>
         </div>
       </div>
