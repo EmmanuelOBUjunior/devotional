@@ -94,7 +94,7 @@ const DevotionTab = ({ title, url }) => {
             </p>
           </div>
           <div className="border-2 border-[#2B88EF] bg-[#F4F8FC] rounded-lg p-3 my-3 container mx-auto">
-            <h3 className="text-[#6C6C6C] font-bold">Scripture Reading</h3>
+            <h3 className="text-[#6C6C6C] font-bold">Declaration Prayer</h3>
             <p className="text-md text-justify">
               Lord, thank you for speaking to me and desiring a relationship
               with me. Help me to recognize Your voice amidst the noise of this
