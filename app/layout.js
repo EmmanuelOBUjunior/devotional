@@ -6,8 +6,17 @@ const raleway = Raleway({
 });
 
 export const metadata = {
-  title: "Devotion",
-  description: "This is a devotional application",
+  title: "Hearing the Voice of God",
+  description: "This is the devotion for hearing the voice of God",
+  openGraph:{
+    title: "Hearing the Voice of God",
+    description: "This is the devotion for hearing the voice of God",
+    image:[
+      {
+        url: ''
+      }
+    ]
+  }
 };
 
 export default function RootLayout({ children }) {
