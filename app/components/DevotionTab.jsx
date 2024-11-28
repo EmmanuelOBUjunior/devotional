@@ -1,6 +1,3 @@
-import React from "react";
-
-
 const devotions = [
     { date: "2024-07-01", title: "Devotion for July 1" },
     { date: "2024-06-30", title: "Devotion for June 30" },
@@ -13,13 +10,13 @@ const DevotionTab = () => {
   return (
     <div className="flex flex-col max-h-fit p-4 max-w-4xl mx-auto">
       <div className="mb-4">
-        <div className="w-full h-60 bg-gray-200 rounded-md">
-          <video
-            className="w-full max-w-md md:max-w-3xl"
+        {/* <div className="w-full h-60 bg-gray-200 rounded-md"> */}
+        <video
+            className="w-full h-full rounded-md"
             controls
             src="video/homevideo.mp4"
           />
-        </div>
+        {/* </div> */}
       </div>
       <div className="flex flex-col md:flex-row gap-6 flex-grow">
         <div className="flex flex-col bg-white p-6 shadow-md md:w-2/3 rounded-md">
