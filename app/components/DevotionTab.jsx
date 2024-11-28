@@ -1,4 +1,4 @@
-import { FaChevronRight } from "react-icons/fa";
+import { FaChevronRight, FaFacebook, FaLink, FaTwitter, FaWhatsapp } from "react-icons/fa";
 import Connect from "./Connect";
 import Link from "next/link";
 
@@ -35,7 +35,7 @@ const devotions = [
   },
 ];
 
-const DevotionTab = () => {
+const DevotionTab = ({title, url}) => {
   return (
     <div className="flex flex-col px-4 py-20 max-w-4xl mx-auto">
       <div className="mb-4">
@@ -92,6 +92,52 @@ const DevotionTab = () => {
           </div>
           <div className="bg-[#1837C2] p-2 rounded-lg mb-6">
             <p className="">Share with your community</p>
+            <div className="flex gap-3">
+        {/* WhatsApp */}
+        <Link
+          href={`https://api.whatsapp.com/send?text=${encodeURIComponent(
+            title
+          )} ${encodeURIComponent(url)}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaWhatsapp className="text-white" size={24} />
+        </Link>
+
+        {/* Twitter */}
+        <Link
+          href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
+            title
+          )}&url=${encodeURIComponent(url)}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaTwitter className="text-white" size={24} />
+        </Link>
+
+        {/* Facebook */}
+        <Link
+          href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
+            url
+          )}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaFacebook className="text-white" size={24} />
+        </Link>
+
+        {/* Copy Link */}
+        <button
+          onClick={copyLink}
+          className={`${copied && "text-white font-bold text-xs"}`}
+        >
+          {copied ? (
+            "Link Copied!"
+          ) : (
+            <FaLink className="text-white" size={24} />
+          )}
+        </button>
+      </div>
           </div>
         </div>
         <div className="flex-1 bg-white p-6">
