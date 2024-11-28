@@ -92,7 +92,7 @@ const DevotionTab = () => {
           </div>
         </div>
         <div className="flex-1 bg-white p-6 shadow-md rounded-md">
-          <div className="bg-blue-500 p-2 rounded-lg mb-2">
+          <div className="bg-[#1837C2] p-2 rounded-lg mb-2">
             <Connect />
           </div>
           <h2 className="text-2xl font-semibold mb-4">Past Devotions</h2>
