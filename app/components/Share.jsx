@@ -13,19 +13,6 @@ const Share = ({ title, url }) => {
     setTimeout(() => setCopied(false), 2000);
   };
   return (
-    <>
-      <Head>
-        <title>Hearing the voice of God</title>
-        <meta name="description" content="Welcome to Victory Church" />
-        <meta property="og:title" content="Hearing the voice of God" />
-        <meta
-          property="og:description"
-          content="This is the devotion from Victory Church"
-        />
-        <meta property="og:url" content="https://devotional-nu.vercel.app/" />
-        <meta property="og:image" content="icons/victorylogo.png" />
-      </Head>
-
       <div className="flex flex-col gap-1 items-center md:items-start">
         <span className="font-semibold text-white">
           Share with your community
@@ -77,7 +64,6 @@ const Share = ({ title, url }) => {
           </button>
         </div>
       </div>
-    </>
   );
 };
 
