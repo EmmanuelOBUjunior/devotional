@@ -1,3 +1,4 @@
+import { FaChevronRight } from "react-icons/fa";
 import Connect from "./Connect";
 
 const devotions = [
@@ -94,18 +95,17 @@ const DevotionTab = () => {
             <Connect />
           </div>
           <h2 className="text-2xl font-semibold mb-4">Past Devotions</h2>
-          <ul className="space-y-4">
-            {devotions.map((devotion, index) => (
-              <li key={index}>
-                <a
-                  href={`/devotion/${devotion.date}`}
-                  className="text-blue-500 hover:underline"
-                >
-                  {devotion.title}
-                </a>
-              </li>
+          <div className="space-y-4">
+            {devotions.map(({id,title, date})=>(
+                <div key={id}>
+                    <div>
+                        <h4 className="font-medium">{title}</h4>
+                        <p className="text-sm text-gray-500">{date}</p>
+                    </div>
+                    <FaChevronRight className="text-gray-400"/>
+                </div>
             ))}
-          </ul>
+          </div>
         </div>
       </div>
     </div>
