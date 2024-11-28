@@ -14,7 +14,7 @@ const Navbar = ({ activeTab, setActiveTab }) => {
               activeTab === "home" ? "bg-[#1837C2] text-white" : "text-[#6C6C6C]"
             }`}
           >
-            <div className="border-2 bg-white border-[#A6362E] rounded-full w-8 h-8 flex items-center justify-center">
+            <div className="border-2 bg-white border-[#A6362E] rounded-full w-7 h-7 flex items-center justify-center">
             <Image
               src="icons/victorylogo.svg"
               alt="Home"
