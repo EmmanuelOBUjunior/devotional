@@ -23,7 +23,7 @@ const Share = ({title, url}) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaWhatsapp className="bg-white text-blue-500 rounded-md" size={24} />
+            <FaWhatsapp className="bg-white text-[#1837C2] rounded-md" size={24} />
           </Link>
   
           {/* Twitter */}
@@ -34,7 +34,7 @@ const Share = ({title, url}) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaTwitter className="bg-white text-blue-500 rounded-md" size={24} />
+            <FaTwitter className="bg-white text-[#1837C2] rounded-md" size={24} />
           </Link>
   
           {/* Facebook */}
@@ -45,12 +45,12 @@ const Share = ({title, url}) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaFacebook className="bg-white text-blue-500 rounded-md" size={24} />
+            <FaFacebook className="bg-white text-[#1837C2] rounded-md" size={24} />
           </Link>
   
           {/* Copy Link */}
           <button onClick={copyLink}>
-            {copied ? "Link Copied!" : <FaLink className="bg-white text-blue-500 rounded-md" size={24}/>}
+            {copied ? "Link Copied!" : <FaLink className="bg-white text-[#1837C2] rounded-md" size={24}/>}
           </button>
         </div>
       </div>
