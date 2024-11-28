@@ -1,7 +1,6 @@
 import React from "react";
 import Connect from "./Connect";
 import Share from "./Share";
-import MetaTags from "./MetaTags";
 
 const MainVideoTab = () => {
   return (
