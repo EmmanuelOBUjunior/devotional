@@ -20,7 +20,8 @@ export const metadata = {
   twitter: {
     title: "Hearing the Voice of God",
     description: "This is the devotion for hearing the voice of God",
-    images: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3JWm2Ai7KPqpxZLPmrrxT88LL20pfnTF6jw&s'
+    images:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3JWm2Ai7KPqpxZLPmrrxT88LL20pfnTF6jw&s",
   },
 };
 
