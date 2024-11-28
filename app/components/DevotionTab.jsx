@@ -36,6 +36,11 @@ const devotions = [
 ];
 
 const DevotionTab = ({title, url}) => {
+    const copyLink = () => {
+        navigator.clipboard.writeText(url);
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
+      };
   return (
     <div className="flex flex-col px-4 py-20 max-w-4xl mx-auto">
       <div className="mb-4">
