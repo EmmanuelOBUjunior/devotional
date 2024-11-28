@@ -22,7 +22,9 @@ const DevotionTab = () => {
           </div>
           <div className="border-2 border-[#EFAA2B] rounded-lg p-3 mt-3">
             <h3 className="text-[#6C6C6C] font-bold">Scripture Reading</h3>
+            <p className="text-lg">John 10:27</p>
           </div>
+          <div className="mt-5 container mx-auto"></div>
         </div>
       </div>
     </div>
