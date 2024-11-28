@@ -1,5 +1,6 @@
 import { FaChevronRight } from "react-icons/fa";
 import Connect from "./Connect";
+import Link from "next/link";
 
 const devotions = [
   {
@@ -96,14 +97,14 @@ const DevotionTab = () => {
           </div>
           <h2 className="text-2xl font-semibold mb-4">Past Devotions</h2>
           <div className="space-y-4">
-            {devotions.map(({id,title, date})=>(
-                <div key={id} className="flex justify-between items-center p-3 border-b border-gray-200 hover:bg-gray-50 cursor-pointer transition duration-200">
+            {devotions.map(({id,title, date, url})=>(
+                <Link href={url} key={id} className="flex justify-between items-center p-3 border-b border-gray-200 hover:bg-gray-50 cursor-pointer transition duration-200">
                     <div>
                         <h4 className="font-medium">{title}</h4>
                         <p className="text-sm text-gray-500">{date}</p>
                     </div>
                     <FaChevronRight className="text-gray-400"/>
-                </div>
+                </Link>
             ))}
           </div>
         </div>
