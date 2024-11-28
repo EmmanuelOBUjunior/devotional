@@ -1,4 +1,5 @@
 "use client";
+import Head from "next/head";
 import Link from "next/link";
 import React, { useState } from "react";
 import { FaFacebook, FaLink, FaTwitter, FaWhatsapp } from "react-icons/fa";
@@ -13,66 +14,69 @@ const Share = ({ title, url }) => {
   };
   return (
     <>
-    <Head>
+      <Head>
         <title>Hearing the voice of God</title>
         <meta name="description" content="Welcome to Victory Church" />
         <meta property="og:title" content="Hearing the voice of God" />
-        <meta property="og:description" content="This is the devotion from Victory Church" />
+        <meta
+          property="og:description"
+          content="This is the devotion from Victory Church"
+        />
         <meta property="og:url" content="https://devotional-nu.vercel.app/" />
         <meta property="og:image" content="icons/victorylogo.png" />
       </Head>
 
-    <div className="flex flex-col gap-1 items-center md:items-start">
-      <span className="font-semibold text-white">
-        Share with your community
-      </span>
-      <div className="flex gap-3">
-        {/* WhatsApp */}
-        <Link
-          href={`https://api.whatsapp.com/send?text=${encodeURIComponent(
-            title
-          )} ${encodeURIComponent(url)}`}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaWhatsapp className="text-white" size={24} />
-        </Link>
+      <div className="flex flex-col gap-1 items-center md:items-start">
+        <span className="font-semibold text-white">
+          Share with your community
+        </span>
+        <div className="flex gap-3">
+          {/* WhatsApp */}
+          <Link
+            href={`https://api.whatsapp.com/send?text=${encodeURIComponent(
+              title
+            )} ${encodeURIComponent(url)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaWhatsapp className="text-white" size={24} />
+          </Link>
 
-        {/* Twitter */}
-        <Link
-          href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
-            title
-          )}&url=${encodeURIComponent(url)}`}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaTwitter className="text-white" size={24} />
-        </Link>
+          {/* Twitter */}
+          <Link
+            href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
+              title
+            )}&url=${encodeURIComponent(url)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaTwitter className="text-white" size={24} />
+          </Link>
 
-        {/* Facebook */}
-        <Link
-          href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
-            url
-          )}`}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaFacebook className="text-white" size={24} />
-        </Link>
+          {/* Facebook */}
+          <Link
+            href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
+              url
+            )}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaFacebook className="text-white" size={24} />
+          </Link>
 
-        {/* Copy Link */}
-        <button
-          onClick={copyLink}
-          className={`${copied && "text-white font-bold text-xs"}`}
-        >
-          {copied ? (
-            "Link Copied!"
-          ) : (
-            <FaLink className="text-white" size={24} />
-          )}
-        </button>
+          {/* Copy Link */}
+          <button
+            onClick={copyLink}
+            className={`${copied && "text-white font-bold text-xs"}`}
+          >
+            {copied ? (
+              "Link Copied!"
+            ) : (
+              <FaLink className="text-white" size={24} />
+            )}
+          </button>
+        </div>
       </div>
-    </div>
     </>
   );
 };
