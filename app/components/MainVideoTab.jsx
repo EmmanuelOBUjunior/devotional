@@ -5,15 +5,6 @@ import Head from 'next/head'
 
 const MainVideoTab = () => {
   return (
-    <>
-    <Head>
-        <title>Hearing the voice of God</title>
-        <meta name="description" content="Welcome to Victory Church" />
-        <meta property="og:title" content="Hearing the voice of God" />
-        <meta property="og:description" content="This is the devotion from Victory Church" />
-        <meta property="og:url" content="https://devotional-nu.vercel.app/" />
-        <meta property="og:image" content="icons/victorylogo.png" />
-      </Head>
         <div className="min-h-screen flex flex-col px-4 justify-between pb-16">
       <div className="flex m-auto flex-col items-center justify-center">
         <video 
@@ -27,7 +18,6 @@ const MainVideoTab = () => {
       </div>
       </div>
     </div>
-    </>
   )
 }
 
