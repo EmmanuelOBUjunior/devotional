@@ -49,7 +49,7 @@ const Share = ({title, url}) => {
           </Link>
   
           {/* Copy Link */}
-          <button onClick={copyLink}>
+          <button onClick={copyLink} className={`${copied && 'text-white font-bold text-xs'}`}>
             {copied ? "Link Copied!" : <FaLink className="bg-white text-[#1837C2] rounded-md" size={24}/>}
           </button>
         </div>
