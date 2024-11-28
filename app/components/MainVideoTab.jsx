@@ -10,6 +10,7 @@ const MainVideoTab = () => {
         url="https://devotional-nu.vercel.app/"
         description="This is the devotion for Hearing the word of God"
         imageURL="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3JWm2Ai7KPqpxZLPmrrxT88LL20pfnTF6jw&s"
+        title='Hearing the voice of God'
       />
       <div className="flex m-auto flex-col items-center justify-center">
         <video
