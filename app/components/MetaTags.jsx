@@ -1,8 +1,8 @@
-import React from 'react'
+import Head from 'next/head'
 
-const MetaTags = () => {
+const MetaTags = ({title, imageURL, description, url}) => {
   return (
-    <div>MetaTags</div>
+    <Head>MetaTags</Head>
   )
 }
 
