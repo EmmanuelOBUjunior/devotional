@@ -23,7 +23,7 @@ const MainVideoTab = () => {
         />
       <div className="bg-[#1837C2] w-full flex flex-col md:flex-row md:px-4 items-center gap-3 p-2 rounded-lg mt-2 justify-between">
         <Connect/>
-        <Share/>
+        <Share title="Hearing the voice of God" url="https://devotional-nu.vercel.app/"/>
       </div>
       </div>
     </div>
