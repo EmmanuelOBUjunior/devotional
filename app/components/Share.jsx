@@ -1,7 +1,7 @@
 'use client'
 import Link from "next/link";
 import React, { useState } from "react";
-import { FaFacebook, FaLink, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import { FaFacebook, FaLink, FaTwitter,FaWhatsapp } from "react-icons/fa";
 
 const Share = ({title, url}) => {
     const [copied, setCopied] = useState(false);
@@ -23,7 +23,7 @@ const Share = ({title, url}) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaWhatsapp className="bg-white text-[#1837C2] rounded-md" size={24} />
+            <FaWhatsapp className="text-white" size={24} />
           </Link>
   
           {/* Twitter */}
@@ -34,7 +34,7 @@ const Share = ({title, url}) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaTwitter className="bg-white text-[#1837C2] rounded-md" size={24} />
+            <FaTwitter className="text-white" size={24} />
           </Link>
   
           {/* Facebook */}
@@ -45,12 +45,12 @@ const Share = ({title, url}) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaFacebook className="bg-white text-[#1837C2] rounded-md" size={24} />
+            <FaFacebook className="text-white" size={24} />
           </Link>
   
           {/* Copy Link */}
           <button onClick={copyLink} className={`${copied && 'text-white font-bold text-xs'}`}>
-            {copied ? "Link Copied!" : <FaLink className="bg-white text-[#1837C2] rounded-md" size={24}/>}
+            {copied ? "Link Copied!" : <FaLink className="text-white" size={24}/>}
           </button>
         </div>
       </div>
