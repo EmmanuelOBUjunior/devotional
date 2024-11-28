@@ -4,7 +4,7 @@ import Share from './Share'
 
 const MainVideoTab = () => {
   return (
-        <div className="min-h-screen flex flex-col justify-between pb-16">
+        <div className="min-h-screen flex flex-col px-4 justify-between pb-16">
       <div className="flex m-auto flex-col items-center justify-center">
         <video 
           className="w-full max-w-md md:max-w-3xl" 
