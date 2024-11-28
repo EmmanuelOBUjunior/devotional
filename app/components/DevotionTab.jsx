@@ -1,9 +1,11 @@
 import {
   FaChevronRight,
   FaFacebook,
+  FaGlobe,
   FaLink,
   FaTwitter,
   FaWhatsapp,
+  FaYoutube,
 } from "react-icons/fa";
 import Connect from "./Connect";
 import Link from "next/link";
@@ -43,7 +45,7 @@ const devotions = [
 ];
 
 const DevotionTab = ({ title, url }) => {
-    const [copied, setCopied] = useState(false)
+  const [copied, setCopied] = useState(false);
   const copyLink = () => {
     navigator.clipboard.writeText(url);
     setCopied(true);
@@ -103,7 +105,7 @@ const DevotionTab = ({ title, url }) => {
               Jesus&apos; Name, I pray. Amen.
             </p>
           </div>
-          <div className="bg-[#1837C2] p-2 rounded-lg mb-6">
+          <div className="bg-[#1837C2] p-4 rounded-lg mb-6 flex flex-col items-center font-semibold text-white justify-between">
             <p className="">Share with your community</p>
             <div className="flex gap-3">
               {/* WhatsApp */}
@@ -154,8 +156,21 @@ const DevotionTab = ({ title, url }) => {
           </div>
         </div>
         <div className="flex-1 bg-white p-6">
-          <div className="bg-[#1837C2] p-2 rounded-lg mb-6">
-            <Connect />
+          <div className="bg-[#e8ecff] p-4 rounded-lg mb-6 border-dashed border-[#1837C2] border-2">
+            <div className="flex flex-col items-center md:items-start">
+              <span className="font-semibold text-[#1837C2]">Connect with us</span>
+              <div className="flex gap-3">
+                <Link href="https://myvictorychurch.org/" target="_blank">
+                  <FaFacebook className="text-[#1837C2]" size={24} />
+                </Link>
+                <Link href="https://myvictorychurch.org/" target="_blank">
+                  <FaYoutube className="text-[#1837C2]" size={24} />
+                </Link>
+                <Link href="https://myvictorychurch.org/" target="_blank">
+                  <FaGlobe className="text-[#1837C2]" size={24} />
+                </Link>
+              </div>
+            </div>
           </div>
           <h2 className="text-2xl font-semibold mb-4">Past Devotions</h2>
           <div className="space-y-4">
