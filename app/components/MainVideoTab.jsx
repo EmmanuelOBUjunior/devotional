@@ -7,11 +7,11 @@ const MainVideoTab = () => {
   return (
     <>
     <Head>
-        <title>Your Page Title</title>
-        <meta name="description" content="Description of your page" />
-        <meta property="og:title" content="Your Page Title" />
-        <meta property="og:description" content="Description of your page" />
-        <meta property="og:url" content="https://yourwebsite.com/yourPage" />
+        <title>Hearing the voice of God</title>
+        <meta name="description" content="Welcome to Victory Church" />
+        <meta property="og:title" content="Hearing the voice of God" />
+        <meta property="og:description" content="This is the devotion from Victory Church" />
+        <meta property="og:url" content="https://devotional-nu.vercel.app/" />
         <meta property="og:image" content="https://yourwebsite.com/yourImage.jpg" />
       </Head>
         <div className="min-h-screen flex flex-col px-4 justify-between pb-16">
