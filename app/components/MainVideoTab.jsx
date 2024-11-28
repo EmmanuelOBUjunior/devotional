@@ -1,7 +1,7 @@
 import React from 'react'
 import Connect from './Connect'
 import Share from './Share'
-import Head from 'next/head'
+
 
 const MainVideoTab = () => {
   return (
