@@ -11,7 +11,7 @@ const Navbar = ({ activeTab, setActiveTab }) => {
           <button
             onClick={() => setActiveTab("home")}
             className={`flex duration-200 items-center gap-2 p-2 rounded-full font-bold ${
-              activeTab === "home" ? "bg-blue-500 text-white" : "text-[#6C6C6C]"
+              activeTab === "home" ? "bg-[#1837C2] text-white" : "text-[#6C6C6C]"
             }`}
           >
             <div className="border-2 bg-white border-[#A6362E] rounded-full w-8 h-8 flex items-center justify-center">
