@@ -4,7 +4,7 @@ import MainVideoTab from "./components/MainVideoTab";
 import DevotionTab from "./components/DevotionTab";
 import Navbar from "./components/Navbar";
 export default function Home() {
-  const [activeTab, setActiveTab] = useState("devotional");
+  const [activeTab, setActiveTab] = useState("home");
 
   return (
     <div>
